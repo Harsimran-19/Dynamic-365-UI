@@ -85,7 +85,7 @@ export default function RootLayout({
           <Navbar />
           <div className="flex flex-1 bg-white">
             <Sidebar />
-            <main className={`flex-1 bg-gray-200 ${sidebarOpen ? 'lg:ml-64' : ''} transition-all duration-300`}>
+            <main className={`flex-1 bg-gray-200 ${sidebarOpen ? 'lg:ml-64' : ''} text-black transition-all duration-300`}>
               {children}
             </main>
           </div>
