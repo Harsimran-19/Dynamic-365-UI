@@ -1,0 +1,112 @@
+[
+    {
+      "vendorAccount": "1001",
+      "name": "Acme Office Supplies",
+      "vendorHold": "No",
+      "phone": "773-998-8892",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "1002",
+      "name": "Lande Packaging Supplies",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "1003",
+      "name": "Ade Supply Company",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "20",
+      "currency": "CAD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "104",
+      "name": "Best Supplier - Europe",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "10",
+      "currency": "EUR",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "AirCarrier",
+      "name": "Air Cargo Carrier",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "1001",
+      "name": "Acme Office Supplies",
+      "vendorHold": "No",
+      "phone": "773-998-8892",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "1002",
+      "name": "Lande Packaging Supplies",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "1003",
+      "name": "Ade Supply Company",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "20",
+      "currency": "CAD",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "104",
+      "name": "Best Supplier - Europe",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "10",
+      "currency": "EUR",
+      "priceGroup": ""
+    },
+    {
+      "vendorAccount": "AirCarrier",
+      "name": "Air Cargo Carrier",
+      "vendorHold": "No",
+      "phone": "",
+      "extension": "",
+      "primaryContact": "",
+      "group": "40",
+      "currency": "USD",
+      "priceGroup": ""
+    }
+  ]
