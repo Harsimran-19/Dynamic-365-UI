@@ -49,12 +49,12 @@ const Sidebar: React.FC = () => {
               {vendorsOpen && (
                 <ul className="ml-6">
                   <li>
-                    <Link href="/vendors/all-vendors" className="block text-sm p-2 hover:bg-gray-100">
+                    <Link href="/vendors/all-vendors" onClick={toggleSidebar}  className="block text-sm p-2 hover:bg-gray-100">
                       All vendors
                     </Link>
                   </li>
                   <li>
-                    <Link href="/vendors/purchase-options" className="block text-sm p-2 hover:bg-gray-100">
+                    <Link href="/vendors/purchase-options" onClick={toggleSidebar}  className="block text-sm p-2 hover:bg-gray-100">
                       Purchase options
                     </Link>
                   </li>
