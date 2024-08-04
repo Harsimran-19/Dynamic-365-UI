@@ -80,7 +80,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`bg-gray-200 {inter.className}`}>
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <div className="flex flex-1 bg-white">

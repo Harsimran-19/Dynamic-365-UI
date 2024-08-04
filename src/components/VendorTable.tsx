@@ -24,12 +24,51 @@ const VendorTable: React.FC<VendorTableProps> = ({ vendors, view }) => {
   if (view === 'grid') {
     return (
       <div className="border px-2 md:px-5 bg-gray-200 overflow-x-auto">
-        <table className="min-w-full bg-gray-200">
+        <div className="overflow-x-auto">
+  <table className="min-w-full bg-gray-200 text-xs sm:text-sm">
+    <thead>
+      <tr className="bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+        <th className="py-2 px-3 sticky left-0 bg-gray-100">Vendor account</th>
+        <th className="py-2 px-3">Name</th>
+        <th className="py-2 px-3">Vendor hold</th>
+        <th className="py-2 px-3  sm:table-cell">Phone</th>
+        <th className="py-2 px-3  md:table-cell">Extension</th>
+        <th className="py-2 px-3  md:table-cell">Primary contact</th>
+        <th className="py-2 px-3  lg:table-cell">Group</th>
+        <th className="py-2 px-3  lg:table-cell">Currency</th>
+        <th className="py-2 px-3  lg:table-cell">Price group</th>
+      </tr>
+    </thead>
+    <tbody>
+      {vendors.map((vendor, index) => (
+        <tr
+          key={index}
+          className={`${index % 2 === 0 ? 'bg-white' : 'bg-gray-50'} ${
+            hoveredRow === index ? 'bg-blue-100' : ''
+          }`}
+          onMouseEnter={() => setHoveredRow(index)}
+          onMouseLeave={() => setHoveredRow(null)}
+        >
+          <td className="py-2 px-3 sticky left-0 bg-inherit text-blue-600">{vendor.vendorAccount}</td>
+          <td className="py-2 px-3">{vendor.name}</td>
+          <td className="py-2 px-3">{vendor.vendorHold}</td>
+          <td className="py-2 px-3  sm:table-cell">{vendor.phone}</td>
+          <td className="py-2 px-3  md:table-cell">{vendor.extension}</td>
+          <td className="py-2 px-3  md:table-cell">{vendor.primaryContact}</td>
+          <td className="py-2 px-3  lg:table-cell">{vendor.group}</td>
+          <td className="py-2 px-3  lg:table-cell">{vendor.currency}</td>
+          <td className="py-2 px-3  lg:table-cell">{vendor.priceGroup}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+        {/* <table className="min-w-full bg-gray-200">
           <thead>
             <tr className="bg- text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
               <th className="py-2 px-3">Vendor account</th>
               <th className="py-2 px-3">Name</th>
-              <th className="py-2 px-3 hidden md:table-cell">Vendor hold</th>
+              <th className="py-2 px-3  md:table-cell">Vendor hold</th>
               <th className="py-2 px-3 hidden md:table-cell">Phone</th>
               <th className="py-2 px-3 hidden lg:table-cell">Extension</th>
               <th className="py-2 px-3 hidden lg:table-cell">Primary contact</th>
@@ -48,7 +87,7 @@ const VendorTable: React.FC<VendorTableProps> = ({ vendors, view }) => {
               >
                 <td className="py-2 px-3 text-blue-600">{vendor.vendorAccount}</td>
                 <td className="py-2 px-3">{vendor.name}</td>
-                <td className="py-2 px-3 hidden md:table-cell">{vendor.vendorHold}</td>
+                <td className="py-2 px-3  md:table-cell">{vendor.vendorHold}</td>
                 <td className="py-2 px-3 hidden md:table-cell">{vendor.phone}</td>
                 <td className="py-2 px-3 hidden lg:table-cell">{vendor.extension}</td>
                 <td className="py-2 px-3 hidden lg:table-cell">{vendor.primaryContact}</td>
@@ -58,7 +97,7 @@ const VendorTable: React.FC<VendorTableProps> = ({ vendors, view }) => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
       </div>
     );
   } else {
