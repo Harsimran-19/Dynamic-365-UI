@@ -11,7 +11,8 @@ const Sidebar: React.FC = () => {
   const toggleVendors = () => setVendorsOpen(!vendorsOpen);
 
   return (
-    <aside className={`bg-white w-64 min-h-screen p-2 transition-all duration-300 fixed lg:static ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 border-r border-gray-200 z-50`}>
+  //<aside className={`bg-white w-64 min-h-screen p-2 transition-all duration-300 fixed lg:static ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 border-r border-gray-200 z-50`}>
+  <aside className={`bg-white w-64 h-[calc(100vh-4rem)] overflow-y-auto p-2 transition-all duration-300 ${sidebarOpen ? 'fixed top-16 left-0 z-40' : 'hidden'} lg:static lg:block border-r border-gray-200`}>
       <nav className='text-black'>
         <div className="mb-4 ">
           <h2 className="text-xs font-semibold text-gray-500 uppercase mb-2 px-4">Favorites</h2>

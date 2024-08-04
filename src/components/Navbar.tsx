@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
   const toggleSidebar = useAppStore((state) => state.toggleSidebar);
 
   return (
-    <nav className="bg-black text-white p-2 flex items-center justify-between">
+    <nav className="bg-black text-white p-2 flex items-center z-50 justify-between">
       
       <div className="flex items-center space-x-2">
       <div className='lg:hidden'>
