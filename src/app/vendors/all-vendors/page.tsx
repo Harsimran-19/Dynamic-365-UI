@@ -1,4 +1,3 @@
-// src/app/vendors/all-vendors/page.tsx
 'use client';
 
 import React, { useState, useEffect } from 'react';

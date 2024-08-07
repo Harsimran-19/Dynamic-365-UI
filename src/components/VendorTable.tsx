@@ -1,4 +1,3 @@
-// src/components/VendorTable.tsx
 import React, { useState } from 'react';
 
 interface Vendor {
