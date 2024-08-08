@@ -12,6 +12,14 @@ const Sidebar: React.FC = () => {
   return (
   //<aside className={`bg-white w-64 min-h-screen p-2 transition-all duration-300 fixed lg:static ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 border-r border-gray-200 z-50`}>
   <aside className={`bg-white w-64  h-[calc(100vh-4rem)] overflow-y-auto p-2 transition-all duration-300 ${sidebarOpen ? 'fixed left-0 z-40' : 'hidden'} lg:transition-none lg:block border-r border-gray-200`}>
+      <button 
+        className="lg:hidden absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+        onClick={toggleSidebar}
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
       <nav className='text-black '>
         <div className="mb-4 ">
           <h2 className="text-xs font-semibold text-gray-500 uppercase mb-2 px-4">Favorites</h2>
